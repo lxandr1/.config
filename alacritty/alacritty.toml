@@ -1,0 +1,43 @@
+import = ["~/.config/alacritty/theme/campbell.toml"]
+
+live_config_reload = true
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font"}
+size = 13
+offset = { x = 1, y = 5 }
+glyph_offset = { x = 0, y = 0 }
+
+[window]
+dynamic_padding=true
+#decorations="None"
+opacity=0.9
+blur=false
+title = ""
+dynamic_title = true
+padding = { x = 10, y = 10 }
+dimensions = { columns = 200, lines = 50 }
+# decorations_theme_variant = "Dark"
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+#vi_mode_style = { shape = "Beam", blinking = "Always" }
+
+# Disable the command q and command w to prevent accidental closing of the window
+[keyboard]
+bindings = [
+    { key = "Q", mods = "Command", action = "None" },
+    { key = "W", mods = "Command", action = "None" },
+]
+
+[colors.primary]
+#background = "0x1a1b26"
+#foreground = "0xc0caf5"
+
+[env]
+# TERM = "xterm-256color"
+TERM = "xterm-256color"
+
+# [shell]
+# program = "/bin/zsh"
+# args = ["-l", "-c", "tmux"]
